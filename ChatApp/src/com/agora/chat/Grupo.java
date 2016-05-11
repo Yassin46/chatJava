@@ -21,6 +21,8 @@ public class Grupo implements Subjet {
 	public void register(Observer o) {
 
 		observers.add(o);
+		
+		//System.out.println("El Usuario " + o + "ha sido registrado");
 
 	}
 

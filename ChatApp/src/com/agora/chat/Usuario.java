@@ -5,6 +5,7 @@ import com.agora.observerDP.*;
 public class Usuario implements Observer {
 
 	private String name;
+	private String mensaje;
 
 	// Mantengo la referencia del grupo
 	private Subjet grupo;
@@ -18,11 +19,11 @@ public class Usuario implements Observer {
 
 		// Mensaje que notifica de que hay un nuevo Usuario
 
-		System.out.println("New Observer " + this.name);
+		System.out.println("Nuevo usuario " + this.name);
 
 	}
 
-	public void setName(String name) {
+	public void changeName(String name) {
 		this.name = name;
 	}
 
@@ -35,8 +36,17 @@ public class Usuario implements Observer {
 	@Override
 	public void notify(String name, String newMensaje) {
 
-		System.out.println(name + " : " + newMensaje);
+		this.name = name;
+		mensaje = newMensaje;
+		
+		printInfo();
+		
 
+	}
+	
+	public void printInfo(){
+		
+		System.out.println(name  + " Escribiendo... " + mensaje);
 	}
 
 }
