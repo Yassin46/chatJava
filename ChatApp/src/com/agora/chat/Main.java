@@ -17,9 +17,11 @@ public class Main {
 		
 		//nuevo1.changeName("Ahmed");
 		
-		nuevo1.notify("Yassin", "Hola chicos");
-		nuevo2.notify("Gabriel", "Buenas que tal");
-		nuevo2.notify("Mehmet", "Hallo, was ist lost?");
+//		nuevo1.notify("Yassin", "Hola chicos"); // privado
+//		nuevo2.notify("Gabriel", "Buenas que tal");
+//		nuevo2.notify("Mehmet", "Hallo, was ist lost?");
+		
+		chat1.notifyObserver(nuevo1.getName(), "Hola chicos"); // grupo
 		
 	}
 

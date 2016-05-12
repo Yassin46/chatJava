@@ -46,7 +46,7 @@ public class Usuario implements Observer {
 	
 	public void printInfo(){
 		
-		System.out.println(name  + " Escribiendo... " + mensaje);
+		System.out.println(name  + ": " + mensaje);
 	}
 
 }
